@@ -1,8 +1,21 @@
-# dislocation_loop_instance_segmentation
-Instance segmentation model for dislocation loops in irradiated materials
+# Instance segmentation of dislocation loops in AM316SS
 
-Instance segmentation models implemented in Detectron2 was used to detect the dislocation loops in irradiated additive manufactured 316 stainless steels (AM316SS). Three types of dislocation loops are considered, including edge-on-loops, inclined-loops and black-spot.
+This package is developed to perform instance segmentation of dislocation loops in additively manufactured 316 stainless steel (AM316SS). Three types of dislocation loops are considered, including edge-on-loops, inclined-loops and black-spot.
 
-A Jupyter Notebook is included for running the trained model to detect the dislocation loops in irradiated materials. The trained model can be downloaded from the link here.
+## Segmentation model
+
+Instance segmentation model used in this package is based on the Mask-RCNN model implemented in the library [Detectron2](https://github.com/facebookresearch/detectron2).
+
+## Installation
+
+The environment can be installed via Anaconda: ``conda env create --file environment.yml --force``
+
+## Run segmentation model
+
+A Jupyter Notebook `` is included for running the trained model to detect the dislocation loops in irradiated materials. The trained model can be downloaded from the link here.
 
 The annotation for the training and validation datasets were performed using open source code "Make Sense" and exported as the COCO style jason file. Examples of the jason files for the training and validation datasets can be found in folders train and val. 
+
+## Support
+
+This material is based upon work supported by Laboratory Directed Research and Development (LDRD) funding from Argonne National Laboratory, provided by the Director, Office of Science, of the U.S. Department of Energy under Contract No. DE-AC02-06CH11357.
